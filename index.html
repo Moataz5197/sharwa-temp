@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sharwa </title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+
+        <a href="#" class="logo"> Sharwa </a>
+        <ul>
+            <li>
+                <a href="#" class ="active">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">How It Works</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <img src = 'images/stars.png' id="stars">
+        <img src = 'images/moon.png' id="moon">
+        <img src = 'images/mountains_behind.png' id="mountains-b">
+        <h2 id="text">Coming Soon !!!</h2>
+        <img src='images/mountains_front.png' id="mountains-f">
+
+    </section>
+
+    <div class="sec">
+        <h2> Sharwa </h2>
+        <p>
+            This is Sharwa, Sharwa is an On-Demand delivery company, It started in Cairo/Egypt in the fourth quart of 2021.
+            Sharwa serves all kind of customers/clients, it can help you increase your business by providing you the best delivery experience in Egypt.
+            We as Sharwa, can deliver anything from anywhere to anyone, pay your bills, provides you with all the home sevices, needs and supplements. 
+            We also can connect you with anyone. What makes us special? Not just our prices, not that our delivery agents will be on a very high level of skill and experience, but because we can reach even the places you may not find on the maps.
+            If you know some unknwn supermarket and you just need a pack of biscuit, we will bring it to you. No issue, we got you, and your biscuits.
+            We have noticed that you and us been trying to order some pizza and happy meal, happy meal will come first, pizza will be a little bit late, that's hot and that's not, doubled delivery fees, why? We can bring them both to you, both will be extremely hot and you'll be only paying one fee.
+            just to got you covered, your soda will be under the same amount.<br><br>
+            
+        </p>
+    </div>
+
+    <div class="landscape">
+        <div class="mountain"></div>
+        <div class="mountain mountain-2"></div>
+        <div class="mountain mountain-3"></div>
+        <div class="sun-container sun-container-1">
+        </div>
+        <div class="sun-container">
+          <div class="sun"></div>
+        </div>
+        <div class="cloud"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="sun-container sun-container-reflection">
+          <div class="sun"></div>
+        </div>
+        <div class="light"></div>
+        <div class="light light-1"></div>
+        <div class="light light-2"></div>
+        <div class="light light-3"></div>
+        <div class="light light-4"></div>
+        <div class="light light-5"></div>
+        <div class="light light-6"></div>
+        <div class="light light-7"></div>
+        <div class="water"></div>
+        <div class="splash"></div>
+        <div class="splash delay-1"></div>
+        <div class="splash delay-2"></div>
+        <div class="splash splash-4 delay-2"></div>
+        <div class="splash splash-4 delay-3"></div>
+        <div class="splash splash-4 delay-4"></div>
+        <div class="splash splash-stone delay-3"></div>
+        <div class="splash splash-stone splash-4"></div>
+        <div class="splash splash-stone splash-5"></div>
+        <div class="lotus lotus-1"></div>
+        <div class="lotus lotus-2"></div>
+        <div class="lotus lotus-3"></div>
+        <div class="trash-container"></div>
+        <div class="front">
+          <div class="stone"></div>
+          <div class="grass"></div>
+          <div class="grass grass-1"></div>
+          <div class="grass grass-2"></div>
+          <div class="reed"></div>
+          <div class="reed reed-1"></div>
+        </div>
+
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_b = document.getElementById('mountains-b');
+        let mountains_f = document.getElementById('mountains-f');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+
+            let value = window.scrollY;
+            stars.style.left = value + 0.25 +'px';
+            moon.style.top = value + 1.05 +'px';
+            mountains_b.style.top = value + 0.5 +'px';
+            mountains_f.style.top = value +'px';
+            text.style.marginRight = value + 30 +'px';
+            text.style.marginTop = value + 1.5 +'px';
+            //header.style.top = value + 0.5 + 'px';
+
+        });
+
+    </script>
+    
+</body>
+</html>
