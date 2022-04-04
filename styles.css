@@ -97,3 +97,12 @@
     z-index: 1000;
     position: relative;
   }
+
+  .body__main__notindex{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+  }
